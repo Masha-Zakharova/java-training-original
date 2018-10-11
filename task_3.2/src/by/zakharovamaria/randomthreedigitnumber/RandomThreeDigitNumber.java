@@ -12,11 +12,11 @@ public class RandomThreeDigitNumber {
 	private int[] arrayOfDigits = new int[NUMBER_OF_DIGITS];    // массив для хранения цифр числа
 
 	public RandomThreeDigitNumber() {
-		this.number = random.nextInt(MAX_NUMBER - MIN_NUMBER) + MIN_NUMBER;      // рандомные числа в диапазоне [100; 999]
-		this.createArrayOfDigits();
+		this.number = random.nextInt(MAX_NUMBER - MIN_NUMBER + 1) + MIN_NUMBER;      // рандомные числа в диапазоне [100; 999]
+		this.createDigitsArray();
 	}
 	
-	private void createArrayOfDigits() {       // заполнение массива цифрами числа
+	private void createDigitsArray() {       // заполнение массива цифрами числа
 		int tmp = number;
 		
 		for(int i = 2; i >= 0; i--) {
@@ -45,7 +45,7 @@ public class RandomThreeDigitNumber {
 		return maxValue;
 	}
 		
-	public int sumOfDigits() {                    // сумма цифр числа
+	public int sumDigits() {                    // сумма цифр числа
 		int sum = 0;
 		
 		for(int i = 0; i < arrayOfDigits.length; i++) {
