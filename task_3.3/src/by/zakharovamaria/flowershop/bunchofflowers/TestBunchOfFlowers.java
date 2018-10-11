@@ -1,4 +1,5 @@
-/* Написать программу, содержащую иерархии цветов для цветочного магазина. 
+/* (1 вариант)
+   Написать программу, содержащую иерархии цветов для цветочного магазина. 
    Собрать букет и определить его стоимость. */
  
 
@@ -20,6 +21,5 @@ public class TestBunchOfFlowers {
 		weddingBouquet.add(new Olaf("Ruby red"));
 		
 		System.out.println("Total cost of wedding bouquet: " + weddingBouquet.totalCost());
-
 	}
 }
