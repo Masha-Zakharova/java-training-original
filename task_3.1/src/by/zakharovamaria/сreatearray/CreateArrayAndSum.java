@@ -25,22 +25,13 @@ public class CreateArrayAndSum {
 		System.out.println(" ");
 	}
 	
-	public String sumIntArray() {               // возвращает строку сумму чисел массива intArr
+	public String sumArray() {               // возвращает строку сумму чисел массива intArr
 		int sum = 0;
 		
 		for(int i = 0; i < strArr.length; i++) {
 			sum += intArr[i];
 		}
 		return Integer.toString(sum);
-	}
-	
-	public String sumStrArray() {               // возвращает строку сумму чисел строкового массива strArr
-		StringBuilder sb = new StringBuilder();
-		
-		for(String element : this.strArr) {
-			sb.append(element); 				   // добавляем один элемент из массива strArr
-		}
-		return sb.toString(); 				   // результирующая строка сумма
 	}
 	
 }

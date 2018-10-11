@@ -1,4 +1,5 @@
-// Написать программу, позволяющую получить массив чисел в строках и вернуть строку сумму этих чисел.
+// (1 вариант)
+// Написать программу, позволяющую получить массив чисел в строках и вернуть строку - сумму этих чисел.
 
 package by.zakharovamaria.сreatearray;
 
@@ -10,8 +11,7 @@ public class TestArray {
 		arr.generateRandomArray();
 		arr.printArray();
 		
-		System.out.println("Integer sum: " + arr.sumIntArray());
-		System.out.println("String sum: " + arr.sumStrArray());
+		System.out.println("Integer sum: " + arr.sumArray());
 	}
 
 }
